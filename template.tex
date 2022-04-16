@@ -1,0 +1,61 @@
+% Document class options
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{article}
+
+% Font options
+$if(fontfamily)$
+\usepackage[$fontfamilyoptions$]{$fontfamily$}
+$else$
+\usepackage{lmodern}
+$endif$
+
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex,
+            pdfauthor={Harvey Barnhard},
+            pdftitle={CV - Harvey Barnhard}]{hyperref}
+\usepackage{amsmath}
+\usepackage{geometry}
+ \geometry{
+ total={170mm,257mm},
+ left=20mm,
+ top=30mm,
+ bottom=30mm
+ }
+ 
+ % Formatting sections
+\usepackage{titlesec}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black
+}
+
+\usepackage{enumitem, fancyhdr, tabularx}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.3ex}{\small\bf +}\nolinebreak\hspace{-.10em}\raisebox{.3ex}{\small\bf +}}
+
+\begin{document}
+
+\begin{center} 
+{\huge \bfseries Harvey Barnhard\\}
+{\href{https://harveybarnhard.com}{\faGlobe\ harveybarnhard.com} }
+{\href{https://github.com/harveybarnhard}{\faGithub\ GitHub}\\ }
+\end{center}
+
+$body$
+\end{document}
+
