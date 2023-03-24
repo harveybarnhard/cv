@@ -17,24 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 \begin{itemize}[leftmargin=0.09in, label={}]
 \resumeSubheading
       {Harvard University}{Cambridge, MA}
-      {Ph.D. in Economics}{Starting in Fall 2022}
+      {Ph.D. in Economics}{2022-}
 \resumeSubheading
       {University of Chicago}{Chicago, IL}
       {B.S. in Statistics and B.A. in Economics}{2016-2020}
 \end{itemize}
 
-\section*{Research Positions}
-\begin{itemize}[leftmargin=0.09in, label={}]
-\resumeSubheading
-      {Opportunity Insights (Harvard University)}{Cambridge, MA}
-      {Pre-Doctoral Fellow}{2020-2022}
-\resumeSubheading
-      {Professor Derek Neal (University of Chicago)}{Chicago, IL}
-      {Research Assistant}{2018-2020}
-\resumeSubheading
-      {Professor Simcha Barkai (London Business School)}{Chicago, IL}
-      {Research Assistant}{2018}
-\end{itemize}
 \section*{Research}
 \begin{itemize}[leftmargin=0.09in, label={}]
 \resumeSubheading
