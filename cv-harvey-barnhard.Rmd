@@ -26,8 +26,8 @@ knitr::opts_chunk$set(echo = TRUE)
 \section*{Research}
 \begin{itemize}[leftmargin=0.09in, label={}]
 \resumeSubheading
-      {Ordinal Classification with Probability Constraints}{2021}
-      {Prepared Manuscript}{}
+      {True and Pseudo-True Parameters}{2024}
+      {\href{https://economics.mit.edu/sites/default/files/2024-04/True\%20and\%20Pseudo-True\%20Parameters.pdf}{{\scriptsize \faLink} Working Paper with Isaiah Andrews and Jacob Carlson}}{}
 \resumeSubheading
       {Approximating Heavy Traffic with Brownian Motion}{2018}
       {\href{http://math.uchicago.edu/~may/REU2018/REUPapers/Barnhard.pdf}{{\scriptsize \faLink} Published by the University of Chicago Mathematics Department}}{}
@@ -40,18 +40,6 @@ knitr::opts_chunk$set(echo = TRUE)
 \resumeSubheading
       {U.S. Census Bureau}{2020-}
       {Special Sworn Status}{}
-\end{itemize}
-\section*{Other Experience}
-\begin{itemize}[leftmargin=0.09in, label={}]
-\resumeSubheading
-      {University of Chicago Development Economics Cohort}{Chicago, IL}
-      {Leader}{2018-2020}
-\resumeSubheading
-      {University of Chicago Mathematics REU}{Chicago, IL}
-      {Participant}{Summer 2018}
-\resumeSubheading
-      {Journal of Political Economy}{Chicago, IL}
-      {Editorial Assistant}{2017-2018}
 \end{itemize}
 \section*{Skills}
 \begin{itemize}[leftmargin=0.09in, label={}]
