@@ -1,17 +1,56 @@
----
-output: 
-  pdf_document:
-    keep_tex: true
-    fig_caption: true
-    template: template.tex
-title: "CV - Harvey Barnhard"
-fontfamily: libertine
-fontsize: 12pt
----
+% Document class options
+\documentclass[12pt,]{article}
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+% Font options
+\usepackage[]{libertine}
+
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex,
+            pdfauthor={Harvey Barnhard},
+            pdftitle={CV - Harvey Barnhard}]{hyperref}
+\usepackage{amsmath}
+\usepackage{geometry}
+ \geometry{
+ total={170mm,257mm},
+ left=20mm,
+ top=30mm,
+ bottom=30mm
+ }
+ 
+ % Formatting sections
+\usepackage{titlesec}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black
+}
+
+\usepackage{enumitem, fancyhdr, tabularx}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.3ex}{\small\bf +}\nolinebreak\hspace{-.10em}\raisebox{.3ex}{\small\bf +}}
+
+\begin{document}
+
+\begin{center} 
+{\huge \bfseries Harvey Barnhard\\}
+{\href{https://harveybarnhard.com}{\faGlobe\ harveybarnhard.com} }
+{\href{https://github.com/harveybarnhard}{\faGithub\ GitHub}\\ }
+\end{center}
 
 \section*{Education}
 \begin{itemize}[leftmargin=0.09in, label={}]
@@ -42,7 +81,6 @@ knitr::opts_chunk$set(echo = TRUE)
       {Approximating Heavy Traffic with Brownian Motion}{2018}
       {\href{http://math.uchicago.edu/~may/REU2018/REUPapers/Barnhard.pdf}{{\scriptsize \faLink} Published by the University of Chicago Mathematics Department}}{}
 \end{itemize}
-
 
 \section*{Research in Progress}
 \begin{itemize}[leftmargin=0.09in, label={}]
@@ -75,4 +113,4 @@ knitr::opts_chunk$set(echo = TRUE)
       {{\normalfont Marathon Training (PR: 2:32:20), Photography}}{}
       {}{}
 \end{itemize}
-
+\end{document}
